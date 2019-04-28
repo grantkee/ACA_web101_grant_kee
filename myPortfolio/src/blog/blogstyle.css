@@ -1,15 +1,20 @@
 h1 {
-    color: pink;
-    width: 60%;
+    color: white;
+    width: 30%;
     margin: 5% auto;
+    grid: 2/3;
+    text-align: center;
+    /* background-image: url(./fontbackground.jpg);
+    background-repeat: none; */
 }
 
 body {
-    background: gray;
+    background-image: url(./background.jpg);
+    background-size: cover;
 }
 
 main {
-    background: white;
+    background: transparent;
     width: 60%;
     margin: 5% auto;
 }
@@ -21,14 +26,27 @@ article {
     background: yellow;
 }
 
-article > h3 {
-    font-size: 1em;
+article > blockquote > h4 {
+    text-align: center;
 }
 
 article:hover{
     background: white;
 }
 
-article > p:hover{
-    background: blue;
+a:link {
+    color: black;
+}
+
+a:visited{
+    color: blue;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+footer:hover{
+    color: black;
 }
