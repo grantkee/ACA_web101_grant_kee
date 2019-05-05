@@ -35,13 +35,13 @@
     padding: 5px;
 }
 
-.has-border{
-  border-radius: 50%;
-  margin: 0px;
+  .has-border{
+    border-radius: 50%;
+    margin: 0px;
 }
 
   #profile-pic {
-    width: 300px%;
+    width: 300px;
     height: 300px;
     border-radius: 5%;
     margin: 50px;
