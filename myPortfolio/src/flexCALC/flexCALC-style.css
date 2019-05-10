@@ -1,0 +1,34 @@
+html {
+    margin-top: 25px;
+    font-family: arial;
+}
+
+.item {
+    background: slateblue;
+    padding: 30px;
+    margin: 5px;
+    color: white;
+    font-size: 40px;
+    flex: 1;
+}
+
+.container {
+    background: white;
+    padding: 10px;
+    height: 600px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.item1 {
+    flex: 100%;
+}
+
+.item2 {
+    flex: 50%;
+}

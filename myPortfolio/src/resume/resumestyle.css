@@ -55,3 +55,7 @@ footer {
 footer:hover {
     color: green;
 }
+
+.bullets{
+    border: 1px solid white;
+}
