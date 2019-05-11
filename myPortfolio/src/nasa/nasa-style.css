@@ -39,21 +39,14 @@ img:hover  {
  }
 
 @media ( min-width : 500px ){
-  header {
-    margin: 20px;
-  }
-
 	.container {
     	display: flex;
     	flex-wrap: wrap;
     	flex-direction: row;
     	max-height: 800px;
-	}
-  .image {
-     width: 100%;
   }
-
-  p{
-    text-align: center;
+  
+  .image {
+    width: 28%;
   }
 }
