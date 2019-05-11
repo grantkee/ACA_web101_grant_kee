@@ -3,6 +3,7 @@
       font-family: Arial, Helvetica, sans-serif;
       background-image: url(./background.jpg);
       background-size: cover;
+      backdrop-filter: invert(100%);
     }
     
     a:link{
@@ -31,6 +32,7 @@
       color: white;
       font-family: Arial, Helvetica, sans-serif;
       background: transparent;
+
       padding: 25px;
       font-size: 30px;
   }
@@ -48,6 +50,20 @@
       margin-bottom: 0px;
       grid-column: 3/3;
       display: block center;
+      padding: 5px;
+  }
+  
+  .has-border{
+    border-radius: 50%;
+    margin: 0px;
+  }
+  
+    #profile-pic {
+      width: 300px;
+      height: 300px;
+      border-radius: 5%;
+      margin: 50px;
+      grid-column: 3/3;
     }
     
     h1 {
@@ -64,7 +80,7 @@
       font-style: italic;
       font-size: 20px;
       color: white;
-    
+
     }
     
     .small-text {
@@ -83,3 +99,6 @@
     }
   
   }
+
+}
+
