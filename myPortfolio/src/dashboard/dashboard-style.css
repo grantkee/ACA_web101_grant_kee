@@ -1,0 +1,541 @@
+html {
+    font-family: arial;
+    background-color: lightgreen;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "clock  calendar"
+        "greet  greet"
+        "calc   todo";
+    max-width: 999px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*hard-coded clock*/
+
+.clock {
+    border: 1px solid black;
+    padding: 5px;
+    grid-area: clock;
+}
+
+.clock-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "hours hour colon minutes minute a m";
+    max-width: 140px;
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    background: yellow;
+    text-align: center;
+    font-size: 33px;
+}
+
+/*hardcoded calendar*/
+
+.calendar {
+    border: 1px solid black;
+    padding: 5px;
+    grid-area: calendar;
+}
+
+.calendar-container{
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-areas: auto auto auto auto auto auto auto;
+    grid-template-areas: 
+    "monthyear monthyear monthyear monthyear monthyear monthyear monthyear"
+    "sunday monday tuesday wednesday thursday friday saturday"
+    "one two three four five six seven"
+    "eight nine ten eleven twelve thirteen fourteen"
+    "fifteen sixteen seventeen eighteen nineteen twenty tone"
+    "ttwo tthree tfour tfive tsix tseven teight"
+    "tnine thirty thone thtwo ththree thfour thfive";
+    max-width: auto;
+    margin: auto;
+    background: teal;
+    padding: 10px;
+}
+
+.monthyear {
+    grid-area: monthyear;
+    margin: auto;
+    font-size: 24px;
+}
+
+.sunday {
+    grid-area: sunday;
+    margin: auto;
+  }
+  
+  .monday {
+    grid-area: monday;
+    margin: auto;
+  }
+  
+  .tuesday {
+    grid-area: tuesday;
+    margin: auto;
+  }
+  
+  .wednesday {
+    grid-area: wednesday;
+    margin: auto
+  }
+  
+  .thursday {
+    grid-area: thursday;
+    margin: auto;
+  }
+  
+  .friday {
+    grid-area: friday;
+    margin: auto;
+  }
+  
+  .saturday {
+    grid-area: saturday;
+    margin: auto;
+  }
+  
+  
+  .box-one {
+    grid-area: one;
+    margin: auto;
+  }
+  
+  .box-two {
+    grid-area: two;
+    margin: auto;
+  }
+  
+  .box-three {
+    grid-area: three;
+    margin: auto;
+  }
+  
+  .box-four {
+    grid-area: four;
+    margin: auto;
+  }
+  
+  .box-five {
+    grid-area: five;
+    margin: auto;
+  }
+  
+  .box-six {
+    grid-area: six;
+    margin: auto;
+  }
+  
+  .box-seven {
+    grid-area: seven;
+    margin: auto;
+  }
+  
+  .box-eight {
+    grid-area: eight;
+    margin: auto;
+    font-weight: bold;
+  }
+  
+  .box-nine {
+    grid-area: nine;
+    margin: auto;
+  }
+  
+  .box-ten {
+    grid-area: ten;
+    margin: auto;
+  }
+  
+  .box-eleven {
+    grid-area: eleven;
+    margin: auto;
+  }
+  
+  .box-twelve {
+    grid-area: twelve;
+    margin: auto;
+  }
+  
+  .box-thirteen {
+    grid-area: thirteen;
+    margin: auto;
+  }
+  
+  .box-fourteen {
+    grid-area: fourteen;
+    margin: auto;
+  }
+  
+  .box-fifteen {
+    grid-area: fifteen;
+    margin: auto;
+  }
+  
+  .box-sixteen {
+    grid-area: sixteen;
+    margin: auto;
+  }
+  
+  .box-seventeen {
+    grid-area: seventeen;
+    margin: auto;
+  }
+  
+  .box-eighteen {
+    grid-area: eighteen;
+    margin: auto;
+  }
+  
+  .box-nineteen {
+    grid-area: nineteen;
+    margin: auto;
+  }
+  
+  .box-twenty {
+    grid-area: twenty;
+    margin: auto;
+  }
+  
+  .box-twentyone {
+    grid-area: tone;
+    margin: auto;
+  }
+  
+  .box-twentytwo {
+    grid-area: ttwo;
+    margin: auto;
+  }
+  
+  .box-twentythree {
+    grid-area: tthree;
+    margin: auto;
+  }
+  
+  .box-twentyfour {
+    grid-area: tfour;
+    margin: auto;
+  }
+  
+  .box-twentyfive {
+    grid-area: tfive;
+    margin: auto;
+  }
+  
+  .box-twentysix {
+    grid-area: tsix;
+    margin: auto;
+  }
+  
+  .box-twentyseven {
+    grid-area: tseven;
+    margin: auto;
+  }
+  
+  .box-twentyeight {
+    grid-area: teight;
+    margin: auto;
+  }
+  
+  .box-twentynine {
+    grid-area: tnine;
+    margin: auto;
+  }
+  
+  .box-thirty {
+    grid-area: thirty;
+    margin: auto;
+  }
+  
+  .box-thirtyone {
+    grid-area: thone;
+    margin: auto;
+  }
+  
+  .box-thirtytwo {
+    grid-area: thtwo;
+    margin: auto;
+  }
+  
+  .box-thirtythree {
+    grid-area: ththree;
+    margin: auto;
+  }
+  
+  .box-thirtyfour {
+    grid-area: thfour;
+    margin: auto;
+  }
+  
+  .box-thirtyfive {
+    grid-area: thfive;
+    margin: auto;
+  }
+  
+/* greeting */
+
+.greeting{
+   display: grid;
+    grid-area: greet;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+.message {
+    background: coral;
+    padding: 10px;
+    max-width: auto;
+}
+
+/*hard-coded todo list */
+
+.todo {
+    display: grid;
+    grid-area: todo;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.todo-container {
+    background: fuchsia;
+    height: auto;
+    display: grid;
+    grid-template-columns: 56px auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+        "firstcheckbox firsttotdo"
+        "secondcheckbox secondtodo"
+        "thirdcheckbox thirdtodo"
+        "fourthcheckbox fourthtodo"
+        "fifthcheckbox fifthtodo"
+        "sixthcheckbox sixthtodo";
+        max-width: auto;
+        margin: auto;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    width: 50px;
+    height: 50px;
+    border: 5px solid black;
+    background: white;
+    border-radius: 20%;
+}
+
+input[type="checkbox"]:hover{
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background: gray;
+}
+
+.todo-container > div{
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 5px;
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+/* hardcoded calculator */
+
+.calculator {
+    grid-area: calc;
+    padding: 20px;
+    border: 1px solid black;
+  }
+  
+  .face {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "ans ans ans ans ans"
+      "clear posneg percent divide power"
+      "seven eight nine multiply log"
+      "four five six minus ln"
+      "one two three plus sqroot"
+      "zero zero decimal equals equals";
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background: green;
+  }
+  
+  .face > div {
+    font-size: 30px;
+  }
+  
+  .face > div:hover{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .answer {
+    grid-area: ans;
+    border: 2px solid black;
+    text-align: center;
+  }
+  
+  .clear{
+    grid-area: clear;
+    text-align: center;
+  }
+  
+  .posneg {
+    grid-area: posneg;
+    text-align: center;
+  }
+  
+  .percent {
+    grid-area: percent;
+    text-align: center;
+  }
+  
+  .divide {
+    grid-area: divide;
+    text-align: center;
+  }
+  
+  .power {
+    grid-area: power;
+    text-align: center;
+  }
+  
+  .seven {
+    grid-area: seven;
+    text-align: center;
+  }
+  
+  .eight {
+    grid-area: eight;
+    text-align: center;
+  }
+  
+  .nine {
+    grid-area: nine;
+    text-align: center;
+  }
+  
+  .multiply {
+    grid-area: multiply;
+    text-align: center;
+  }
+  
+  .log {
+    grid-area: log;
+    text-align: right;
+  }
+  
+  .four {
+    grid-area: four;
+    text-align: center;
+  }
+  
+  .five {
+    grid-area: five;
+    text-align: center;
+  }
+  
+  .six {
+    grid-area: six;
+    text-align: center;
+  }
+  
+  .subtract {
+    grid-area: minus;
+    text-align: center;
+  }
+  
+  .ln {
+    grid-area: ln;
+    text-align: center;
+  }
+  
+  .one {
+    grid-area: one;
+    text-align: center;
+  }
+  
+  .two {
+    grid-area: two;
+    text-align: center;
+  }
+  
+  .three {
+    grid-area: three;
+    text-align: center;
+  }
+  
+  .add {
+    grid-area: plus;
+    text-align: center;
+  }
+  
+  .sqroot {
+    grid-area: sqroot;
+    text-align: center;
+  }
+  
+  .zero {
+    grid-area: zero;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+  
+  .decimal {
+    grid-area: decimal;
+    text-align: center;
+  }
+  
+  .equals {
+    grid-area: equals;
+    margin: auto;
+  }
+
+  @media(max-width: 576px) {
+    body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "clock"
+        "calendar"
+        "greet"
+        "calc"
+        "todo";
+    }
+    .clock {
+        grid-area: clock;
+    }
+    .calendar {
+        grid-area: calendar;
+    }
+    .greeting {
+        grid-area: greet;
+    }
+    .calculator {
+        grid-area: calc;
+    }
+    .todo {
+        grid-area: todo;
+    }
+  }
