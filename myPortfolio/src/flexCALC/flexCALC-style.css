@@ -27,6 +27,7 @@ html {
 .item:hover{
     color: black;
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .item1 {
