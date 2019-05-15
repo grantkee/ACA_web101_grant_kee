@@ -20,9 +20,9 @@ html {
 /*hard-coded clock*/
 
 .clock {
-    border: 1px solid black;
     padding: 5px;
     grid-area: clock;
+    border-bottom: 1px solid #f2f2f2;
 }
 
 .clock-container {
@@ -38,12 +38,14 @@ html {
     background: yellow;
     text-align: center;
     font-size: 33px;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
 }
 
 /*hardcoded calendar*/
 
 .calendar {
-    border: 1px solid black;
+    border: 1px solid #f2f2f2;
     padding: 5px;
     grid-area: calendar;
 }
@@ -65,6 +67,7 @@ html {
     margin: auto;
     background: teal;
     padding: 10px;
+    border-radius: 15%;
 }
 
 .monthyear {
@@ -290,7 +293,8 @@ html {
 .greeting{
    display: grid;
     grid-area: greet;
-    border: 1px solid black;
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
     padding: 5px;
     text-align: center;
 }
@@ -299,6 +303,8 @@ html {
     background: coral;
     padding: 10px;
     max-width: auto;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
 }
 
 /*hard-coded todo list */
@@ -306,7 +312,8 @@ html {
 .todo {
     display: grid;
     grid-area: todo;
-    border: 1px solid black;
+    border: 1px solid #f2f2f2;
+    border-left: none;
     padding: 5px;
 }
 
@@ -325,6 +332,7 @@ html {
         "sixthcheckbox sixthtodo";
         max-width: auto;
         margin: auto;
+        border-radius: 5%;
 }
 
 input[type="checkbox"] {
@@ -358,7 +366,7 @@ input[type="checkbox"]:checked {
 .calculator {
     grid-area: calc;
     padding: 20px;
-    border: 1px solid black;
+    border: 1px solid #f2f2f2;
   }
   
   .face {
@@ -377,6 +385,8 @@ input[type="checkbox"]:checked {
     margin-left: auto;
     margin-right: auto;
     background: green;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
   }
   
   .face > div {
@@ -513,7 +523,7 @@ input[type="checkbox"]:checked {
   }
 
   @media(max-width: 576px) {
-    body {
+    .container {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto;
@@ -521,21 +531,99 @@ input[type="checkbox"]:checked {
         "calendar"
         "greet"
         "calc"
-        "todo";
+        "todo";max-width: 768px;
+        max-width: 576px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     }
     .clock {
         grid-area: clock;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        margin-left: auto;
+      border: none;
+    }
+    
+    .clock-container {
+      background: lightgreen;
     }
     .calendar {
         grid-area: calendar;
+      border: none;
+    }
+    .calendar-container {
+      border: 1px solid black;
     }
     .greeting {
         grid-area: greet;
+      border: none;
+    }
+    .message{
+      border: 1px solid black;
     }
     .calculator {
         grid-area: calc;
+        border: none;
+    }
+    .face {
+      border: 1px solid black;
     }
     .todo {
         grid-area: todo;
+      border: none;
+    }
+    .todo-container {
+      border: 1px solid black;
+    }
+  }
+  
+  @media (max-width:768px) {
+    .container {
+    display: grid;
+    grid-template-columns:  auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+        "clock"
+        "calendar"
+        "greet"
+        "calc"
+        "todo";
+    max-width: 768px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .clock {
+        grid-area: clock;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        margin-left: auto;
+      border: none;
+    }
+    
+    .clock-container {
+      background: lightgreen;
+    }
+    .calendar {
+        grid-area: calendar;
+/*       border: none; */
+    }
+    .greeting {
+        grid-area: greet;
+/*       border: none; */
+    }
+    .calculator {
+        grid-area: calc;
+/*       border: none; */
+    }
+    .todo {
+        grid-area: todo;
+/*       border: none; */
     }
   }
