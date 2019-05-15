@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sidebanner {
+    display: flex;
+    width: 50px;
+    height: 500px;
+}
+
+#info-container {
+    border-radius: 5px;
+    background-color: f2f2f2;
+    padding: 30px;
+}
+
