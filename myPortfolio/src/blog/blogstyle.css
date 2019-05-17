@@ -9,7 +9,7 @@ h1 {
 }
 
 body {
-    background-image: url(./background.jpg);
+    background-image: url(../images/blog-background.jpg);
     background-size: cover;
 }
 
