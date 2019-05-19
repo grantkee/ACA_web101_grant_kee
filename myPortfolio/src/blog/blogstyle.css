@@ -1,11 +1,10 @@
 h1 {
-    color: white;
+    color: #f1f1f1;
     width: 30%;
     margin: 5% auto;
     grid: 2/3;
     text-align: center;
-    /* background-image: url(./fontbackground.jpg);
-    background-repeat: none; */
+    font-family: arial;
 }
 
 body {
@@ -15,19 +14,23 @@ body {
 
 main {
     background: transparent;
-    width: 60%;
-    margin: 5% auto;
+    width: 70%;
+    margin: auto;
 }
 
 article {
-    margin: 2% auto;
+    margin: 5% auto;
     border: 3px solid black;
     width: 60%;
     background: yellow;
+    font-family: Arial;
+    padding: 5px;
+    text-align: left;
 }
 
 article > blockquote > h4 {
     text-align: center;
+    font-size: 22px;
 }
 
 article:hover{
