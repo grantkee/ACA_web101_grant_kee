@@ -12,6 +12,7 @@ nav {
     border: 1px solid black;
     font-size: 40px;
     background: transparent;
+    border: none;
 }
 
 .container {
@@ -63,6 +64,38 @@ nav {
     order: 0;
 }
 
+iframe {
+    border: 1px solid #f2f2f2;
+    width: 350px;
+    height: 654px;
+}
+
+.three {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+
+.side-information {
+    color: white;
+    margin: auto;
+    padding 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.gigs {
+    border: 5px solid #f2f2f2;
+}
+
+.socialmedia {
+    margin-top: 10px;
+    border: 5px solid #f2f2f2;
+    padding: 5px;
+}
+
 footer {
     text-align: center;
 }
@@ -81,5 +114,21 @@ footer:hover {
     .players {
         display: flex;
         flex-direction: column;
+    }
+
+    .three {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gigs {
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    .socialmedia {
+        margin-top: 30px;
+        text-align: left;
     }
 }
