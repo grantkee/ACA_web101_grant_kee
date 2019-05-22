@@ -1,5 +1,5 @@
 html {
-  font-family: Arial;
+  font-family: "BioRhyme", sans-serif;
   background-image: url(./src/images/backgroundLandingPage.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -53,9 +53,10 @@ a:link:visited {
   margin: 5px;
 }
 
-footer {
+.blogpage {
+  display: block;
+  font-size: 10px;
   text-align: center;
-  margin-top: 10px;
 }
 
 .copalink {
@@ -65,8 +66,34 @@ footer {
   text-align: center;
 }
 
+.nasapage {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+}
 
+.dashpage {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+}
 
+.resumepage {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+}
+
+.calcpage {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
 
 
 
