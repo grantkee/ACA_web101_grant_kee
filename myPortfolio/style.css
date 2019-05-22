@@ -1,10 +1,71 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url(./background.jpg);
+html {
+  font-family: Arial;
+  background-image: url(./src/images/backgroundLandingPage.jpg);
   background-size: cover;
-  /* width: 100%; */
+  background-repeat: no-repeat;
 }
 
+header {
+  display: block;
+  align-content: center;
+  color: lightcyan;
+}
+
+.bigName {
+  text-align: center;
+  font-size: auto;
+  width: 100%;
+}
+
+.littleTitle {
+  text-align: center;
+  font-size: auto;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  width: 60%;
+  margin: auto;
+}
+
+a:link {
+  text-decoration: none;
+  color: aqua;
+}
+
+a:link:visited {
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.preview {
+  margin: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+/* 
 a:link{
   text-decoration: none;
 }
@@ -122,4 +183,4 @@ button:hover{
 
 footer {
   text-align: center;
-}
+} */

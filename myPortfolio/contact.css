@@ -1,0 +1,32 @@
+html {
+    font-family: arial;
+    background-image: url(./src/images/contactBackground.jpg);
+    background-size: 100vw;
+}
+
+.container {
+    width: 300px;
+}
+
+h1 {
+    margin-top: 15%;
+    margin-bottom: -5px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit {
+    width: 30%;
+    margin-top: 15px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+textarea {
+    font-family: arial;
+}
