@@ -1,5 +1,5 @@
 html {
-    font-family: arial;
+    font-family: "BioRhyme", sans-serif;
     background-image: url(./src/images/contactBackground.jpg);
     background-size: 100vw;
 }
@@ -10,7 +10,8 @@ html {
 
 h1 {
     margin-top: 15%;
-    margin-bottom: -5px;
+    margin-bottom: -2px;
+    text-align: center;
 }
 
 .boxes {
@@ -19,8 +20,9 @@ h1 {
 }
 
 .submit {
-    width: 30%;
+    width: 24%;
     margin-top: 15px;
+    font-family: "BioRhyme", sans-serif;
 }
 
 label {
@@ -28,5 +30,13 @@ label {
 }
 
 textarea {
-    font-family: arial;
+    font-family: "BioRhyme", sans-serif;
+}
+
+input {
+    font-family: "BioRhyme", sans-serif;
+}
+
+select {
+    font-family: "BioRhyme", sans-serif;
 }

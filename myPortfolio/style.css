@@ -58,7 +58,12 @@ footer {
   margin-top: 10px;
 }
 
-
+.copalink {
+  display: block;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+}
 
 
 
