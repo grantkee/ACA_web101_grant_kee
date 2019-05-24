@@ -1,11 +1,15 @@
 html {
     font-family: "BioRhyme", sans-serif;
     background-image: url(./src/images/contactBackground.jpg);
-    background-size: 100vw;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .container {
     width: 300px;
+    margin-left: 10%;
 }
 
 h1 {
