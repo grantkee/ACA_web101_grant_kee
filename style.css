@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(./background.jpg);
+  background-image: url(./myPortfolio/src/images/background.jpg);
   background-size: cover;
   /* width: 100%; */
 }
