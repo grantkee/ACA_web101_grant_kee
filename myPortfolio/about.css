@@ -62,3 +62,22 @@ h1 {
     text-align: center;
     margin-top: 10%;
 }
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: -20%;
+  margin-left: -30%;
+  font-family: monospace sans-serif;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.navigationLinks {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  order: 2;
+  justify-content: center;
+}
