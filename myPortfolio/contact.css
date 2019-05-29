@@ -1,0 +1,84 @@
+html {
+    font-family: "BioRhyme", sans-serif;
+    background-image: url(./src/images/contactBackground.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+header {
+    width: 300px;
+    margin-left: 8%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+a {
+    color: black;
+}
+
+.container {
+    width: 300px;
+    margin-left: 10%;
+}
+
+h1 {
+    margin-top: 15%;
+    margin-bottom: -2px;
+    text-align: center;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit {
+    width: 24%;
+    margin-top: 15px;
+    font-family: "BioRhyme", sans-serif;
+}
+
+label {
+    margin-top: 10px;
+}
+
+textarea {
+    font-family: "BioRhyme", sans-serif;
+}
+
+input {
+    font-family: "BioRhyme", sans-serif;
+}
+
+select {
+    font-family: "BioRhyme", sans-serif;
+}
+
+@media (max-width: 567px) {
+    header {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .boxContainer{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+    }
+}

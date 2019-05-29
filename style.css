@@ -1,131 +1,111 @@
+html {
+  font-family: "BioRhyme", sans-serif;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  /* CSS3 background image: starry night; */
-  background-color:black;
-  background-image:
-  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-}
-
-a:link{
-  text-decoration: none;
-}
-
-.logo {
-  width: 150px;
-  height: 150px;
-  margin: 3% 10%;
+  background: 
+  linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+  linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+  linear-gradient(315deg, black 25%, transparent 25%),
+  linear-gradient(45deg, black 25%, transparent 25%);	
+  background-size: 2em 2em;
+  background-color: #232323;
 }
 
 header {
-  display: grid;
-  grid-template-columns: 40% 60%;
+  display: block;
+  align-content: center;
+  color: lightcyan;
+}
+
+.bigName {
+  text-align: center;
+  font-size: auto;
   width: 100%;
 }
 
-main {
-  height: 100%;
+.littleTitle {
+  text-align: center;
+  font-size: auto;
   width: 100%;
-  display: grid;
-  grid-template-columns: 30% 40% 30%;
 }
 
-nav > a {
-  margin: 3px 1px 3px;
-  height: 10%;
-  width: 25%;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  border-radius: 40px;
-  background: transparent;
-  padding: 10px; 
-  text-align: center;
-  border: 2px solid black;
-}
-
-.has-border {
-  font-size: 20px;
-  border-radius: 30px;
-  border: 10px solid transparent;
-  background: transpartent;
-  text-align: center;
-}
-
-.has-border:hover{
-  border-color: white;
-  color: green;
-}
-
-nav {
+ul {
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  padding-right: 2%;
-}
-
-#profile-pic {
-  width: 300px;
-  height: 400px;
-  border-radius: 10%;
-  margin: 10% auto;
-  grid-column: 2/3;
-  align-content: center;
-}
-
-h1 {
-  color:silver;
-  grid-column: 2/3;
-  margin: 0% auto;
-  border-bottom: 2px solid #1940A9;
-  align-content: center;
-  font-size: 60px;
-}
-
-h2 {
-  grid-column: 2/3;
-  margin: 5% auto;
-  font-style: italic;
-  font-size: 30px;
-  color: white;
-
-}
-
-.small-text {
-  grid-column: 2/3;
-  color: white;
-  font-size: 10px;
-  margin: 3% auto;
-}
-
-button {
-  grid-column: 2/3;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  width: 60%;
   margin: auto;
-  width: 25%;
-  height: 20%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
-  background: transparent;
-  padding: 5% auto; 
-  padding-bottom: 3%;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.76);
-  letter-spacing: 5px;
-  font-style: bold oblique;
-  border-width: 5px;
-  border-color: transparent;
-  border-radius: 30%;
 }
 
-button:hover{
-  border-color: black;
-  color: green;
+a:link {
+  text-decoration: none;
+  color: aqua;
+}
+
+a:link:visited {
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.preview {
+  margin: 5px;
+}
+
+.blogpage {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+}
+
+.copalink {
+  display: block;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+}
+
+.nasapage {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+}
+
+.dashpage {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+}
+
+.resumepage {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+}
+
+.calcpage {
+  display: block;
+  font-size: 10px;
+  text-align: center;
 }
 
 footer {
   text-align: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 576px){
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
 }

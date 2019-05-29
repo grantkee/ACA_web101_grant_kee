@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./contact.css"> <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<header>
+    
+        <div class="navigationLinks">
+                <nav>
+                  <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./index.html">My Grind</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+</header>
+<body>
+    <div class="container">
+        <h1>Make Contact</h1>
+        <div class="boxContainer">
+            <form class="boxes" action="https://formspree.io/grant.d.kee@gmail.com" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="your@email.here">
+                <label for="animals">Choose One</label>
+                <select name="animals" id="favorites">
+                    <option value="chooseOne">Choose one</option>
+                    <option value="flamingo">flamingo</option>
+                    <option value="koala">koala bear</option>
+                    <option value="honeybadger">honeybadger</option>
+                    <option value="dolphin">dolphin</option>
+                    <option value="gorilla">gorilla</option>
+                    <option value="tiger">tiger</option>
+                    <option value="giraffe">giraffe</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="50" rows="9" placeholder="Type here..."></textarea>
+                <button class="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

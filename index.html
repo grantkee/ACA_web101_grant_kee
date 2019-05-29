@@ -5,26 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
   <title>Portfolio</title>
 </head>
   <body>
     <div id="wrapper"></div>
     <header>
-      <a href="https://austincodingacademy.com/"><img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo"></a>
-      <nav> 
-        <a class="has-border">Resume</a>
-        <a class="has-border">About Me</a><br>
-        <a href="src/blog/blog.html" class="has-border">My Blog</a><br>
-        <a class="has-border">Contact Me</a><br>
-      </nav>
+      <!-- <a href="https://austincodingacademy.com/"><img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo"></a> -->
+      <div class="bigName">
+        <h1>GRANT KEE</h1>
+      </div>
+      <div class="littleTitle">
+        <h3>unCertified Scrub</h3>
+      </div>
+      <div class="navigationLinks">
+        <nav>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./index.html">Grind</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <img src="./myPortfolio/src/images/myProfilePic.jpg" id="profile-pic" alt="Head shot of Me">
-        <h1>Grant Kee</h1>
-            <h2>"I'm just a scrub right now"</h2>
-               <button id="portfolio">Portfolio
-               </button>
-    </main>
+      <div class="container">
+        <a href="./src/blog/blog.html">
+          <div class="preview">
+            <iframe src="./src/blog/blog.html" frameborder="10" name="blog"></iframe>
+            <a href="../myPortfolio/src/blog/blog.html" target="blog" class="blogpage">blog</a>
+          </div>
+        </a>
+        <a href="./src/copastatic/copastaticFirst.html">
+          <div class="preview">
+            <iframe scrolling="no" src="./src/copastatic/copastaticFirst.html" name="copastatic" frameborder="10"></iframe>
+            <a href="https://www.copastatic.com" target="copastatic" class="copalink">business</a>
+          </div>
+        </a>
+        <a href="./src/nasa/nasa.html">
+          <div class="preview">
+            <iframe src="./src/nasa/nasa.html" frameborder="10" name="nasa" scrolling="no">NASA</iframe>
+            <a href="../myPortfolio/src/nasa/nasa.html" target="nasa" class="nasapage">nasa</a>
+          </div>
+        </a>
+        <a href="./src/dashboard/dashboard.html">
+          <div class="preview">
+            <iframe src="./src/dashboard/dashboard.html" frameborder="10" name="dashboard"></iframe>
+            <a href="../myPortfolio/src/dashboard/dashboard.html" target="dashboard" class="dashpage">dashboard</a>
+          </div>
+        </a>
+        <a href="./src/resume/resume.html">
+          <div class="preview">
+            <iframe src="./src/resume/resume.html" frameborder="10" name="resume" scrolling="no"></iframe>
+            <a href="../myPortfolio/src/resume/resume.html" target="resume" class="resumepage">resume</a>
+          </div>
+        </a>
+        <a href="./src/flexCALC/flexCALC.html">
+          <div class="preview">
+            <iframe src="./src/flexCALC/flexCALC.html" frameborder="10" name="calc" scrolling="no"></iframe>
+            <a href="../myPortfolio/src/flexCALC/flexCALC.html" target="calc" class="calcpage">calculator</a>
+          </div>
+        </a>
+    </div>
     <footer><a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a></footer>
   </body>
 </html>
