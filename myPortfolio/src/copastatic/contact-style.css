@@ -1,8 +1,16 @@
 .container {
     display: grid;
-    grid-template-columns: 90px 50px;
+    grid-template-columns: 900px 50px;
     grid-template-rows: auto;
     grid-area: "boxes sidebanner";
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+.picture {
+    width: 300px;
+    height: auto;
 }
 
 .sidebanner {
@@ -14,9 +22,13 @@
 
 #info-container {
     border-radius: 5px;
-    background-color: f2f2f2;
     padding: 30px;
     grid-area: "boxes";
+}
+
+.button {
+    margin: 10px auto;
+    font-family: arial;
 }
 
 .boxes {
