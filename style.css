@@ -102,6 +102,22 @@ footer {
   margin-top: 30px;
 }
 
+@keyframes example {
+  0% {color: white;}
+  15% {color: red;}
+  28% {color: orange;}
+  40% {color: yellow;}
+  60% {color: green;}
+  75% {color: blue;}
+  90% {color: violet;}
+}
+
+.littleTitle {
+  animation-name: example;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+}
+
 @media (max-width: 756px){
   .container {
     display: flex;
