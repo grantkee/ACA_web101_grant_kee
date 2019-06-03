@@ -18,10 +18,20 @@ header {
   color: lightcyan;
 }
 
+.hello {
+  color: white;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: 1s;
+}
+
 .bigName {
   text-align: center;
   font-size: auto;
   width: 100%;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: 10s;
 }
 
 .littleTitle {
@@ -100,6 +110,12 @@ a:link:visited {
 footer {
   text-align: center;
   margin-top: 30px;
+}
+
+.animated {
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
 }
 
 @media (max-width: 756px){
