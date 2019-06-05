@@ -97,6 +97,12 @@ a:link:visited {
   text-align: center;
 }
 
+.baconpage {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+}
+
 footer {
   text-align: center;
   margin-top: 30px;
