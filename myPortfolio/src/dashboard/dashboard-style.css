@@ -524,6 +524,12 @@ input[type="checkbox"]:checked {
     margin: auto;
   }
 
+  /*location CSS*/
+
+
+
+  /*media stuff*/
+
   @media(max-width: 576px) {
     .container {
         display: grid;
@@ -618,6 +624,41 @@ input[type="checkbox"]:checked {
   #startBox:hover{
     cursor: pointer;
   }
+
+  /*geolocation CSS*/
+
+#geoLocation {
+  display: flex;
+  flex-direction: column;
+  grid-area: geo;
+}
+
+#find-user {
+  background-color: red;
+  border: 3px solid black;
+  box-shadow: 300px;
+  color: black;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 80%;
+  height: 200px;
+  width: 200px;
+  font-size: 33px;
+}
+
+#map-link {
+  font-family: sans-serif;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+/*.altitude {
+    font-family: sans-serif;
+} */
+
   
   @media (max-width:768px) {
     .container {
