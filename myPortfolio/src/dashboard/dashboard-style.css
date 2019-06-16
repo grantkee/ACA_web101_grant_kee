@@ -631,6 +631,9 @@ input[type="checkbox"]:checked {
   display: flex;
   flex-direction: column;
   grid-area: geo;
+  height: 300px;
+  width: 300px;
+  margin: 10px auto;
 }
 
 #find-user {
@@ -650,9 +653,14 @@ input[type="checkbox"]:checked {
 
 #map-link {
   font-family: sans-serif;
-  margin: 5px;
+  margin: 5px auto;
   padding: 5px;
   text-decoration: none;
+}
+
+#gameTime {
+  margin: 10 auto;
+  text-align: center;
 }
 
 /*.altitude {
@@ -660,50 +668,52 @@ input[type="checkbox"]:checked {
 } */
 
   
-  @media (max-width:768px) {
-    .container {
-    display: grid;
-    grid-template-columns:  auto;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: 
-        "clock"
-        "calendar"
-        "greet"
-        "calc"
-        "todo";
-    max-width: 768px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    
-    .clock {
-        grid-area: clock;
-        width: 100%;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-right: auto;
-        margin-left: auto;
-      border: none;
-    }
-    
-    .clock-container {
-      background: lightgreen;
-    }
-    .calendar {
-        grid-area: calendar;
-/*       border: none; */
-    }
-    .greeting {
-        grid-area: greet;
-/*       border: none; */
-    }
-    .calculator {
-        grid-area: calc;
-/*       border: none; */
-    }
-    .todo {
-        grid-area: todo;
-/*       border: none; */
-    }
+@media (max-width:768px) {
+  .container {
+  display: grid;
+  grid-template-columns:  auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: 
+      "clock"
+      "calendar"
+      "greet"
+      "calc"
+      "todo"
+      "geo"
+      "game";
+  max-width: 768px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   }
+  
+.clock {
+    grid-area: clock;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+  }
+  
+  .clock-container {
+    background: lightgreen;
+  }
+  .calendar {
+      grid-area: calendar;
+/*       border: none; */
+  }
+  .greeting {
+      grid-area: greet;
+/*       border: none; */
+  }
+  .calculator {
+      grid-area: calc;
+/*       border: none; */
+  }
+  .todo {
+      grid-area: todo;
+/*       border: none; */
+  }
+}
