@@ -11,8 +11,8 @@ html {
         "clock  calendar"
         "greet  greet"
         "calc   todo"
-        "geo    geo"
-        "game   game";
+        "game    game"
+        "geo   geo";
     max-width: 999px;
     width: 100%;
     margin-left: auto;
@@ -661,6 +661,7 @@ input[type="checkbox"]:checked {
 #gameTime {
   margin: 10 auto;
   text-align: center;
+  grid-area: game;
 }
 
 /*.altitude {
@@ -679,8 +680,8 @@ input[type="checkbox"]:checked {
       "greet"
       "calc"
       "todo"
-      "geo"
-      "game";
+      "game"
+      "geo";
   max-width: 768px;
   width: 100%;
   margin-left: auto;
