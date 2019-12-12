@@ -26,5 +26,6 @@ doublePoints.addEventListener("click", function(){
         clicker *= 2;
         //still costs 33 cookies each time they double
         score -=33;
+        scoreValue.textContent = score
     };
 });
